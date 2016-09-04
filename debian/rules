@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+override_dh_auto_test:
+override_dh_auto_build:
+override_dh_auto_install:
+	mkdir -p debian/firmware-raspberrypi/boot/firmware
+	cp boot/*.elf boot/*.bin boot/*.dat debian/firmware-raspberrypi/boot/firmware
+	mkdir -p debian/firmware-raspberrypi/usr/share/doc/firmware-raspberrypi
+	cp README boot/LICENCE.broadcom debian/firmware-raspberrypi/usr/share/doc/firmware-raspberrypi/
+
+override_dh_gencontrol:
+	dh_gencontrol -- -v1

@@ -1,0 +1,6 @@
+Source: firmware-raspberrypi
+Maintainer: John Carr <john.carr@unrouted.co.uk>
+
+Package: firmware-raspberrypi
+Architecture: armhf
+Description: The various bits of bootloader + firmware to start a Raspberry Pi.

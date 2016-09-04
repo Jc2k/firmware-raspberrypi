@@ -1,0 +1,5 @@
+firmware-raspberrypi (0-0) jessie; urgency=medium
+
+  * Initial release of 4696954b2c.
+
+ -- John Carr <john.carr@unrouted.co.uk>  Tue, 16 Aug 2016 20:20:05 +0000
